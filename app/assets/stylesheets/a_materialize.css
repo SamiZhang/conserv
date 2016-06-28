@@ -3372,10 +3372,6 @@ nav ul a span.badge {
   text-align: right;
 }
 
-.center, .center-align {
-  text-align: center;
-}
-
 .left {
   float: left !important;
 }
@@ -5733,13 +5729,6 @@ textarea.materialize-textarea + label:after {
 
 .input-field .prefix ~ label {
   margin-left: 3rem;
-}
-
-@media only screen and (max-width: 992px) {
-  .input-field .prefix ~ input {
-    width: 86%;
-    width: calc(100% - 3rem);
-  }
 }
 
 @media only screen and (max-width: 600px) {

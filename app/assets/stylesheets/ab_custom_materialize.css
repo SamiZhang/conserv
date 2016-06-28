@@ -101,13 +101,6 @@ nav .brand-logo {
   text-align: left;
 }
 
-@media only screen and (min-width: 601px) {
-  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 104px;
-   /* line-height: 104px;*/
-  }
-}
-
 a {
   text-decoration: none;
   text-align: center;
@@ -131,7 +124,8 @@ ul li {
 }
 
 .login-form{
-  padding-top: 40%;
+  padding-top: 10%;
+
   min-height:100%;
   background: url("conserv");
   -webkit-background-size: cover;
@@ -237,12 +231,10 @@ ul li {
 
 /*errors*/
 .errors{
-  text-align:center;
   margin: 0 auto;
   display: inherit;
   width: 75%;
   border-radius:8px;
-  padding:6%;
 }
 
 /*register pie*/
@@ -360,6 +352,7 @@ span {
   margin-top:40%;
 }
 
+/*event notifications*/
 #event-sentence {
   width: 100%;
   text-align:center;
@@ -407,4 +400,52 @@ span {
 
 #login-nav-message{
   color:black;
+}
+
+/*desktop*/
+
+@media only screen and (min-width: 600px) {
+  .input-field .prefix ~ input {
+    width: 86%;
+    width: calc(100% - 3rem);
+    background-color: whitesmoke;
+    opacity: 0.5;
+    border-radius: 5px;
+    margin:0 auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .btn, .btn-large,
+  .btn-flat {
+    background-color: rgba(101,117,107,0.75);
+    border: none;
+    border-radius: 12px;
+    display: inline-block;
+    line-height: 36px;
+    outline: 0;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 2em;
+    height: 55px;
+    width: calc(100% - 3rem);
+    text-transform: lowercase;
+    margin-top: 0;
+  }
+  #register-button{
+  color:#cedac5;
+  font-family: quicksand;
+  font-size: 20px;
+  width: 100%;
+  text-align: left;
+  margin-top: 3%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .login-form{
+    background: url("conserv");
+    background-size: cover;
+    height:100%;
+  }
 }
